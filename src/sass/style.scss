@@ -1,0 +1,19 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'base/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/title';
+@import 'blocks/menu';
+@import 'blocks/news';
+@import 'blocks/text';
+@import 'blocks/sidepanel';
