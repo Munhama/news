@@ -1,7 +1,4 @@
 .menu {
-    .hamburger {
-        display: none;
-    }
     nav {
         position: fixed;
         top: 0;
@@ -34,28 +31,6 @@
         }
     }
 }
-
-@media (max-width: 767px) {
-    .menu {
-        .hamburger {
-            display: block;
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 26px;
-            height: 12px;
-            span {
-                display: block;
-                height: 2px;
-                width: 100%;
-                background-color: $gray-color;
-                margin-bottom: 2px;
-                transition: 0.5s all;
-            }
-        }
-        &__block {
-            display: none;
-        }
-    }
+.hamburger {
+    display: none;
 }
