@@ -1,0 +1,9 @@
+.error {
+    &__img {
+        img {
+            width: 100%;
+            min-height: 100vh;
+            object-fit: contain;
+        }
+    }
+}
