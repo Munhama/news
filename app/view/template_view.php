@@ -49,6 +49,7 @@
 
     <?php include 'app/view/'.$content_view; ?>
 
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/form.js"></script>
 </body>

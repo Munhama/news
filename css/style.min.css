@@ -69,15 +69,25 @@ template{display:none}
 .title{margin:0;font-weight:700;font-size:36px;line-height:36px;color:#a0a0a0}
 .admin{margin:50px 0}
 .admin__wrapper{padding-top:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
-.admin__btn-show{-ms-flex-line-pack:justify;align-content:space-between;margin-bottom:15px;color:green;border:2px solid green}
-.admin__btn-show:hover{background-color:green}
-.admin__create-form{width:500px}
-.admin__create-form label{display:block;margin-bottom:0;position:absolute;top:-9px;left:12px;height:18px;padding:0 8px;font-size:12px;background-color:#fff}
+.admin__tabs{list-style:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.admin__tab{margin:0 5px 20px 5px;width:220px;height:50px;border:solid 2px #d0d0d0;font-size:18px;line-height:48px;font-weight:500;text-transform:uppercase;text-align:center;color:#6b6b6b;cursor:pointer;-webkit-transition:.3s all;transition:.3s all}
+.admin__tab_active{border:none;color:#fff;background-color:#06266f}
+.admin__tab_green:hover{-webkit-box-shadow:3px 3px 20px green;box-shadow:3px 3px 20px green;border:none}
+.admin__tab_yellow:hover{-webkit-box-shadow:3px 3px 20px #ff0;box-shadow:3px 3px 20px #ff0;border:none}
+.admin__tab_red:hover{-webkit-box-shadow:3px 3px 20px red;box-shadow:3px 3px 20px red;border:none}
+.admin__form{display:none}
+.admin__form_active{display:-webkit-box;display:-ms-flexbox;display:flex}
+.admin__form label{display:block;margin-bottom:0;position:absolute;top:-9px;left:12px;height:18px;padding:0 8px;font-size:12px;background-color:#fff}
 .admin__input{position:relative;margin-bottom:15px}
 .admin__input input,.admin__input textarea{padding:0 20px;width:100%;height:50px}
-.admin__input textarea{height:250px}
-.admin__create-btn{color:green;border:2px solid green}
-.admin__create-btn:hover{background-color:green}
+.admin__input textarea{padding:20px;height:250px}
+.admin__create-form,.admin__delete-form,.admin__edit-form{width:500px}
+.admin__create-btn{color:#a0a0a0;border:2px solid green}
+.admin__create-btn:hover{background-color:green;color:#a0a0a0}
+.admin__edit-btn{color:#a0a0a0;border:2px solid #ff0}
+.admin__edit-btn:hover{background-color:#ff0;color:#a0a0a0}
+.admin__delete-btn{color:#a0a0a0;border:2px solid red}
+.admin__delete-btn:hover{background-color:red;color:#a0a0a0}
 .menu nav{position:fixed;top:0;width:100%;height:50px;background:#06266f;z-index:10}
 .menu__title{position:absolute;top:5px;left:10px}
 .menu__block{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;padding:13px 70px;margin:0;list-style-type:none}
