@@ -12,11 +12,13 @@
     margin: 0 auto;
 }
 
+@import 'blocks/btn';
 @import 'blocks/title';
+
+@import 'blocks/admin';
 @import 'blocks/menu';
 @import 'blocks/news';
 @import 'blocks/text';
 @import 'blocks/sidepanel';
 @import 'blocks/error';
-@import 'blocks/btn';
 @import 'blocks/media';

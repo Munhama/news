@@ -35,8 +35,8 @@
 
                 <ul class="menu__block">
                     <li class="menu__link"><a href="/">Главная</a></li>
-                    <li class="menu__link"><a href="#">Админка</a></li>
-                    <li class="menu__link"><a href="#">Контакты</a></li>
+                    <li class="menu__link"><a href="/admin">Админка</a></li>
+                    <li class="menu__link"><a href="/contacts">Контакты</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -50,5 +50,6 @@
     <?php include 'app/view/'.$content_view; ?>
 
     <script src="js/hamburger.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>

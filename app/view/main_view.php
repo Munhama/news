@@ -10,7 +10,7 @@
                             </div>
                             <div class='title news__title'>{$row['title']}</div>
                             <div class='news__descr'>{$row['preview']}</div>
-                            <a href='news.php?id={$row['id']}' class='btn news__btn' id='{$row['id']}'>Читать дальше</a>
+                            <a href='#' class='btn news__btn'>Читать дальше</a>
                         </div>
                     ";
                 }

@@ -309,12 +309,86 @@ template {
   margin: 0 auto;
 }
 
+.btn {
+  padding: 5px;
+  background-color: white;
+  color: #6C8CD5;
+  border: 2px solid #6C8CD5;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+.btn:hover {
+  text-decoration: none;
+  background-color: #6C8CD5;
+  color: #fff;
+}
+
 .title {
   margin: 0;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
   color: #a0a0a0;
+}
+
+.admin {
+  margin: 50px 0;
+}
+.admin__wrapper {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.admin__btn-show {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin-bottom: 15px;
+  color: green;
+  border: 2px solid green;
+}
+.admin__btn-show:hover {
+  background-color: green;
+}
+.admin__create-form {
+  width: 500px;
+}
+.admin__create-form label {
+  display: block;
+  margin-bottom: 0;
+  position: absolute;
+  top: -9px;
+  left: 12px;
+  height: 18px;
+  padding: 0 8px;
+  font-size: 12px;
+  background-color: #ffffff;
+}
+.admin__input {
+  position: relative;
+  margin-bottom: 15px;
+}
+.admin__input input, .admin__input textarea {
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+}
+.admin__input textarea {
+  height: 250px;
+}
+.admin__create-btn {
+  color: green;
+  border: 2px solid green;
+}
+.admin__create-btn:hover {
+  background-color: green;
 }
 
 .menu nav {
@@ -467,20 +541,6 @@ template {
      object-fit: contain;
 }
 
-.btn {
-  padding: 5px;
-  background-color: white;
-  color: #6C8CD5;
-  border: 2px solid #6C8CD5;
-  -webkit-transition: all .6s;
-  transition: all .6s;
-}
-.btn:hover {
-  text-decoration: none;
-  background-color: #6C8CD5;
-  color: #fff;
-}
-
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -601,4 +661,5 @@ template {
     font-size: 14px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
