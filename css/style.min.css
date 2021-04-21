@@ -119,7 +119,7 @@ template{display:none}
 .sidepanel{position:fixed;top:99px;left:20px}
 .sidepanel__arrow{width:50px;height:50px;border-top:10px solid #06266f;border-right:10px solid #06266f;margin-right:60px;-webkit-transform:rotate(-135deg);transform:rotate(-135deg);-webkit-transition:all .6s;transition:all .6s}
 .sidepanel__arrow:hover{-webkit-filter:opacity(50%);filter:opacity(50%)}
-.error__img img{width:100%;min-height:100vh;-o-object-fit:contain;object-fit:contain}
+.error__img img{width:100%;min-height:100vh;-o-object-fit:cover;object-fit:cover}
 @media (max-width:1200px){
 .container{max-width:960px}
 .news__items{grid-template-columns:repeat(2,470px)}
@@ -146,7 +146,12 @@ template{display:none}
 .container{width:100%;padding:0 10px}
 .menu__block{width:100%}
 .menu__link{font-size:30px;line-height:50px}
-.text__title{font-size:30px}
+.news__title{font-size:25px}
+.text__title{font-size:25px}
 .text__img{height:200px}
 .text__descr{font-size:14px}
+.admin__tabs{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.admin__form_upper{width:80%}
+.admin__title{font-size:25px}
+.admin__create-form,.admin__delete-form,.admin__edit-form,.admin__update-form{width:100%}
 }

@@ -103,15 +103,38 @@
             line-height: 50px;
         }
     }
+    .news {
+        &__title {
+            font-size: 25px;
+        }
+    }
     .text {
         &__title {
-            font-size: 30px;
+            font-size: 25px;
         }
         &__img {
             height: 200px;
         }
         &__descr {
             font-size: 14px;
+        }
+    }
+    .admin {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__form {
+            &_upper {
+                width: 80%;
+            }
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__create, &__edit, &__delete, &__update {
+            &-form {
+                width: 100%;
+            }
         }
     }
 }

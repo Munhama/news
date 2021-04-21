@@ -629,8 +629,8 @@ template {
 .error__img img {
   width: 100%;
   min-height: 100vh;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -743,14 +743,34 @@ template {
     line-height: 50px;
   }
 
+  .news__title {
+    font-size: 25px;
+  }
+
   .text__title {
-    font-size: 30px;
+    font-size: 25px;
   }
   .text__img {
     height: 200px;
   }
   .text__descr {
     font-size: 14px;
+  }
+
+  .admin__tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .admin__form_upper {
+    width: 80%;
+  }
+  .admin__title {
+    font-size: 25px;
+  }
+  .admin__create-form, .admin__edit-form, .admin__delete-form, .admin__update-form {
+    width: 100%;
   }
 }
 
