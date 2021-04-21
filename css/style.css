@@ -570,6 +570,7 @@ template {
 }
 .text__descr {
   padding-top: 20px;
+  white-space: pre-line;
 }
 .text__date {
   text-align: end;
