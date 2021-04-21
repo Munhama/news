@@ -30,7 +30,7 @@
                         <label for="image">Название картинки</label>
                     </div>
                     
-                    <input type="submit" class="btn admin__create-btn" value="Создать">
+                    <input type="submit" class="btn admin__create-btn" value="Добавить">
                 </form>
             </div>
 
@@ -41,7 +41,7 @@
                         <input type="text" name="id">
                         <label for="id">id</label>
                     </div> 
-
+                    
                     <input type="submit" class="btn admin__edit-btn" value="Изменить">
                 </form>
             </div>

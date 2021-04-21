@@ -347,6 +347,9 @@ template {
       -ms-flex-align: center;
           align-items: center;
 }
+.admin__title {
+  padding-bottom: 20px;
+}
 .admin__tabs {
   list-style: none;
   display: -webkit-box;
@@ -402,7 +405,17 @@ template {
   display: -ms-flexbox;
   display: flex;
 }
-.admin__form label {
+.admin__form_upper {
+  padding: 50px 0;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: white;
+  z-index: 10;
+}
+.admin__form_upper label, .admin__form label {
   display: block;
   margin-bottom: 0;
   position: absolute;
@@ -425,9 +438,16 @@ template {
 .admin__input textarea {
   padding: 20px;
   height: 250px;
+  resize: none;
 }
 .admin__create-form, .admin__edit-form, .admin__delete-form {
   width: 500px;
+}
+.admin__update-form {
+  width: 700px;
+}
+.admin__update-form textarea {
+  height: 400px;
 }
 .admin__create-btn {
   color: #a0a0a0;
@@ -451,6 +471,14 @@ template {
 }
 .admin__delete-btn:hover {
   background-color: red;
+  color: #a0a0a0;
+}
+.admin__update-btn {
+  color: #a0a0a0;
+  border: 2px solid yellow;
+}
+.admin__update-btn:hover {
+  background-color: yellow;
   color: #a0a0a0;
 }
 
