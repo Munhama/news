@@ -133,4 +133,9 @@
             color: $gray-color;
         }
     }
+    &__message {
+        font-size: 26px;
+        font-weight: bold;
+        color: $blue-color;
+    }
 }

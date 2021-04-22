@@ -15,7 +15,7 @@ class Model_Admin extends Model {
             echo 'Не могу соединиться с БД. Код ошибки: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
             exit;
         }
-        
+           
         switch ($formId) {
             case 1:
                 $query = mysqli_prepare($link, 'INSERT INTO `news` (`title`, `preview`, `text`, `date`, `image`) VALUE (?,?,?,?,?)');
@@ -26,6 +26,12 @@ class Model_Admin extends Model {
                 $date = date("Ymd");
                 $image = $_POST['image'];
                 mysqli_stmt_execute($query);
+                $ar = array(
+                    'msg' => 'Новость',
+                    'id' => $title,
+                    'msg2' => 'добавлена',
+                );
+                echo json_encode($ar);
                 break;
             
             case 2:
@@ -72,6 +78,12 @@ class Model_Admin extends Model {
                 mysqli_stmt_bind_param($query, 'i', $id);
                 $id = $_POST['id'];
                 mysqli_stmt_execute($query);
+                $ar = array(
+                    'msg' => 'Новость',
+                    'id' => $id,
+                    'msg2' => 'удалена',
+                );
+                echo json_encode($ar);
                 break;
 
             case 4:

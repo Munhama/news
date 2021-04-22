@@ -481,6 +481,11 @@ template {
   background-color: yellow;
   color: #a0a0a0;
 }
+.admin__message {
+  font-size: 26px;
+  font-weight: bold;
+  color: #6C8CD5;
+}
 
 .menu nav {
   position: fixed;
