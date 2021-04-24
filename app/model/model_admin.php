@@ -3,19 +3,12 @@
 class Model_Admin extends Model {
 
     public function get_data() {
-
+        
+        require_once 'app/core/dbConnect.php';
+        $link = dbConnect::connection();
+        
         $formId = $_POST['form_id'];
 
-        $host = 'localhost';
-        $user = 'root';
-        $password = 'root';
-        $db_name = 'news';
-        $link = mysqli_connect($host, $user, $password, $db_name);
-        if(!link) {
-            echo 'Не могу соединиться с БД. Код ошибки: ' . mysqli_connect_errno() . ', ошибка: ' . mysqli_connect_error();
-            exit;
-        }
-           
         switch ($formId) {
             case 1:
                 $query = mysqli_prepare($link, 'INSERT INTO `news` (`title`, `preview`, `text`, `date`, `image`) VALUE (?,?,?,?,?)');
