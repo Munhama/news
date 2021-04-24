@@ -31,7 +31,7 @@
             justify-content: center;
             align-items: center;
             top: 0;
-            left: -100%;
+            right: -100%;
             width: 50%;
             height: 100%;
             padding: 20px 15px;
@@ -39,7 +39,7 @@
             opacity: .8;
             transition: 0.6s all;
             &_active {
-                left: 0;
+                right: 0;
             }
         }
         &__link {

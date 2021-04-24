@@ -28,35 +28,43 @@ class Model_Admin extends Model {
                 break;
             
             case 2:
+                $query = mysqli_prepare($link, 'SELECT * FROM `news` WHERE `id`=?');
+                mysqli_stmt_bind_param($query, 'i', $idNews);
                 $idNews=$_POST['id'];
-                $query = 'SELECT * FROM `news` WHERE `id`='.intval($idNews);
-                $sql = mysqli_query($link, $query);
-                $row = mysqli_fetch_assoc($sql);
+                mysqli_stmt_execute($query);
+                mysqli_stmt_bind_result($query, $id, $title, $preview, $text, $date, $image);
+                mysqli_stmt_fetch($query);
+                $data['id'] = $id;
+                $data['title'] = $title;
+                $data['preview'] = $preview;
+                $data['text'] = $text;
+                $data['date'] = $date;
+                $data['image'] = $image;
 
                 echo "
                     <div class='admin__form_upper'>
                     <h2 class='title admin__title'>Изминение новости</h2>
                     <form action='' method='POST' class='admin__update-form' id='update_form'>
                             <input type='hidden' name='form_id' value='4'>
-                            <input type='hidden' name='id' value='{$row['id']}'>
+                            <input type='hidden' name='id' value='{$data['id']}'>
                             <div class='admin__input'>
-                                <input type='text' name='title' value='{$row['title']}'>
+                                <input type='text' name='title' value='{$data['title']}'>
                                 <label for='title'>Заголовок</label>
                             </div>    
                             <div class='admin__input'>
-                                <input type='text' name='preview' value='{$row['preview']}'>
+                                <input type='text' name='preview' value='{$data['preview']}'>
                                 <label for='preview'>Превью</label>
                             </div>
                             <div class='admin__input'>
-                                <textarea type='text' name='text'>{$row['text']}</textarea>
+                                <textarea type='text' name='text'>{$data['text']}</textarea>
                                 <label for='text'>Новость</label>
                             </div>
                             <div class='admin__input'>
-                                <input type='text' name='date' readonly value='{$row['date']}'>
+                                <input type='text' name='date' readonly value='{$data['date']}'>
                                 <label for='preview'>Дата</label>
                             </div>
                             <div class='admin__input'>
-                                <input type='text' name='image' value='{$row['image']}'>
+                                <input type='text' name='image' value='{$data['image']}'>
                                 <label for='image'>Название картинки</label>
                             </div>
                             

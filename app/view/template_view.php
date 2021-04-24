@@ -31,7 +31,7 @@
     <div class="menu">
         <nav>
             <div class="container">
-                <h1 class="title menu__title">Beast news</h1>
+                <h1 class="title menu__title"><a href="/">Beast news</a></h1>
 
                 <ul class="menu__block">
                     <li class="menu__link"><a href="/">Главная</a></li>
