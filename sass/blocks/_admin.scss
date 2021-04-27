@@ -57,16 +57,19 @@
         &_active {
             display: flex;
         }
-        &_upper {
+        &-update {
+            display: none;
             padding: 50px 0;
             position: absolute;
             top: 50px;
             left: 50%;
             transform: translateX(-50%);
             background: white;
-            z-index: 10;
+            &_active {
+                display: block;
+            }
         }
-        &_upper label, label {
+        &-update label, label {
             display: block;
             margin-bottom: 0;
             position: absolute;

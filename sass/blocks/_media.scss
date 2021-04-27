@@ -124,7 +124,7 @@
             flex-direction: column;
         }
         &__form {
-            &_upper {
+            &-update {
                 width: 80%;
             }
         }
@@ -135,6 +135,9 @@
             &-form {
                 width: 100%;
             }
+        }
+        &__message {
+            font-size: 20px;
         }
     }
 }

@@ -78,8 +78,9 @@ template{display:none}
 .admin__tab_red:hover{-webkit-box-shadow:3px 3px 20px red;box-shadow:3px 3px 20px red;border:none}
 .admin__form{display:none}
 .admin__form_active{display:-webkit-box;display:-ms-flexbox;display:flex}
-.admin__form_upper{padding:50px 0;position:absolute;top:50px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);background:#fff;z-index:10}
-.admin__form label,.admin__form_upper label{display:block;margin-bottom:0;position:absolute;top:-9px;left:12px;height:18px;padding:0 8px;font-size:12px;background-color:#fff}
+.admin__form-update{display:none;padding:50px 0;position:absolute;top:50px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);background:#fff}
+.admin__form-update_active{display:block}
+.admin__form label,.admin__form-update label{display:block;margin-bottom:0;position:absolute;top:-9px;left:12px;height:18px;padding:0 8px;font-size:12px;background-color:#fff}
 .admin__input{position:relative;margin-bottom:15px}
 .admin__input input,.admin__input textarea{padding:0 20px;width:100%;height:50px}
 .admin__input textarea{padding:20px;height:250px;resize:none}
@@ -154,7 +155,8 @@ template{display:none}
 .text__img{height:200px}
 .text__descr{font-size:14px}
 .admin__tabs{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-.admin__form_upper{width:80%}
+.admin__form-update{width:80%}
 .admin__title{font-size:25px}
 .admin__create-form,.admin__delete-form,.admin__edit-form,.admin__update-form{width:100%}
+.admin__message{font-size:20px}
 }

@@ -405,7 +405,8 @@ template {
   display: -ms-flexbox;
   display: flex;
 }
-.admin__form_upper {
+.admin__form-update {
+  display: none;
   padding: 50px 0;
   position: absolute;
   top: 50px;
@@ -413,9 +414,11 @@ template {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: white;
-  z-index: 10;
 }
-.admin__form_upper label, .admin__form label {
+.admin__form-update_active {
+  display: block;
+}
+.admin__form-update label, .admin__form label {
   display: block;
   margin-bottom: 0;
   position: absolute;
@@ -777,7 +780,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .admin__form_upper {
+  .admin__form-update {
     width: 80%;
   }
   .admin__title {
@@ -785,6 +788,9 @@ template {
   }
   .admin__create-form, .admin__edit-form, .admin__delete-form, .admin__update-form {
     width: 100%;
+  }
+  .admin__message {
+    font-size: 20px;
   }
 }
 
