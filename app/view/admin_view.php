@@ -38,7 +38,11 @@
                 <form action="" method="POST" class="admin__edit-form" id="edit_form">
                     <input type="hidden" name="form_id" value="1">
                     <div class="admin__input">
-                        <input type="text" name="id">
+                        <select name="id">
+                            <?php foreach($data as $optNews):?>
+                                <option value="<?php echo $optNews['id']; ?>"><?php echo $optNews['id'].": ".$optNews['title'];?></option>
+                            <?php endforeach;?>
+                        </select>
                         <label for="id">id</label>
                     </div> 
                     
@@ -79,7 +83,11 @@
             <div class="admin__form">
                 <form action="" method="POST" class="admin__delete-form" id="delete_form">
                     <div class="admin__input">
-                        <input type="text" name="id">
+                        <select name="id">
+                            <?php foreach($data as $optNews):?>
+                                <option value="<?php echo $optNews['id']; ?>"><?php echo $optNews['id'].": ".$optNews['title'];?></option>
+                            <?php endforeach;?>
+                        </select>
                         <label for="id">id</label>
                     </div> 
 

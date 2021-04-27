@@ -2,6 +2,25 @@
 
 class Model_Admin extends Model {
 
+    public function get_data() {
+
+        require_once 'app/core/dbConnect.php';
+        $link = dbConnect::connection();
+
+        $query = 'SELECT * FROM `news` ORDER BY `date` DESC';
+        $sql = mysqli_query($link, $query);
+        $result = [];
+
+        while($row = mysqli_fetch_assoc($sql)) {
+            array_push($result, [
+                    'id' => $row['id'],
+                    'title' => $row['title'],
+                ]);
+        }
+
+        return $result;
+    }
+
     public function delete_news() {
 
         require_once 'app/core/dbConnect.php';

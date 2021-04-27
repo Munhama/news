@@ -82,7 +82,7 @@ template{display:none}
 .admin__form-update_active{display:block}
 .admin__form label,.admin__form-update label{display:block;margin-bottom:0;position:absolute;top:-9px;left:12px;height:18px;padding:0 8px;font-size:12px;background-color:#fff}
 .admin__input{position:relative;margin-bottom:15px}
-.admin__input input,.admin__input textarea{padding:0 20px;width:100%;height:50px}
+.admin__input input,.admin__input select,.admin__input textarea{padding:0 20px;width:100%;height:50px}
 .admin__input textarea{padding:20px;height:250px;resize:none}
 .admin__create-form,.admin__delete-form,.admin__edit-form{width:500px}
 .admin__update-form{width:700px}
