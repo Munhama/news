@@ -94,7 +94,12 @@
                     <input type="submit" class="btn admin__delete-btn" id="btnD" value="Удалить">
                 </form>
             </div>
-            <div class="admin__message" id="result_form"></div> 
+            
+            <div class="admin__modal">
+                <div class="admin__message" id="result_form"></div> 
+                <div class="admin__close">&times;</div>
+            </div>
+            <div class="admin__overlay"></div>
         </div>
     </div>
 </div>
